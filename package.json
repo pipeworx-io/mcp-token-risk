@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-token-risk",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Token Risk — rug-pull / honeypot screening for crypto tokens.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-48d80da25feadc91e8bcee3b99234bd3b40eab9fd8174d694e6e2f18a360f238",
-    "sourceCommit": "b0fb3c31386cf0256dcf1e2f1b3440435a87ec35"
+    "sourceHash": "v1-e659dad2d18e3d62c808927359a43287063ca7c7e65a57700b87fb8362d1d25f",
+    "sourceCommit": "66a0692f029179984440cef6938cba7fdd41d66d"
   }
 }
