@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-token-risk",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Token Risk — rug-pull / honeypot screening for crypto tokens.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-token-risk": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "token-risk"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-token-risk.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/token-risk",
   "pipeworx": {
-    "sourceHash": "v1-e659dad2d18e3d62c808927359a43287063ca7c7e65a57700b87fb8362d1d25f",
-    "sourceCommit": "66a0692f029179984440cef6938cba7fdd41d66d"
+    "mode": "gateway",
+    "slug": "token-risk",
+    "gatewaySlug": "token-risk",
+    "sourceHash": "v1-d7052060deee8e873418bd8a9417739d0f6478609d6ade723c6dbdcb7577cc3d",
+    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
   }
 }
